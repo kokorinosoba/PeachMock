@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <title>Twitter / Authorize an application</title>
+  <link rel="stylesheet" type="text/css" media="screen"
+    href="https://abs-0.twimg.com/login/tfw-base.3baf723b92aa68729f921c77ca3e3c1315116392.css">
+  <!--[if (IEMobile) & (lt IE 9)]>
+      <link href="https://abs-0.twimg.com/login/phoenix-iemobile.49b26ac21d4736060188b5b79bbabc69ca8ef790.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+  <meta name="mswebdialog-title" content="Twitter">
+  <meta name="mswebdialog-logo" content="https://abs.twimg.com/favicons/win8-auth-60.png">
+  <meta name="mswebdialog-header-color" content="#202020">
+  <meta name="mswebdialog-newwindowurl" content="*">
+</head>
+
+<body class="oauth tfw en logged-in noloki">
+  <div id="header" role="banner">
+    <div class="bar">
+      <h1 class="logo">
+        <a class="alternate-context" href="https://twitter.com/home">Twitter</a>
+      </h1>
+      <div id="session" role="navigation">
+        <h2 class="current-user">
+          <a href="" title="Twitterユーザー">
+            <img src="img/Twitter social icons - square - blue.png" alt="" width="24" height="24">
+            <span class="name">twitter-user</span>
+          </a>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div id="bd" role="main">
+    <div class="auth">
+      <h2>Authorize Twitter to access your account?</h2>
+      <div class="app-info" role="content-info" tabindex="0">
+        <h3>
+          <img alt="" class="app-icon" src="img/Twitter social icons - square - blue.png" title="Twitter">
+          Twitter
+        </h3>
+        <dl>
+          <dt class="dev">Developer</dt>
+          <dd class="dev">By twitter.com</dd>
+          <dt class="url">Application URL</dt>
+          <dd class="url">twitter.com/</dd>
+          <dt class="notes">About this app</dt>
+          <dd class="notes">
+            <p>Join Twitter today.</p>
+          </dd>
+        </dl>
+      </div>
+      <form action="order-form.html" id="oauth_form" method="post" target="_self">
+        <fieldset class="buttons">
+          <legend>Authorize Twitter access to use your account?</legend>
+          <input type="submit" value="Authorize app" class="submit button selected" id="allow">
+          <input class="submit button" id="cancel" name="cancel" type="submit" value="Cancel">
+        </fieldset>
+      </form>
+      <div class="permissions allow">
+        <p><strong>This application will be able to:</strong></p>
+        <ul class="permissions allow">
+          <li>See Tweets from your timeline (including protected Tweets) as well as your Lists and collections.</li>
+          <li>See your Twitter profile information and account settings.</li>
+          <li>See accounts you follow, mute, and block.</li>
+        </ul>
+      </div>
+      <div>
+        <p><small>Learn more about third-party app permissions in the <a
+              href="https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps"
+              target="_blank">Help Center</a>.</small></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer" role="navigation">
+    <div id="ft">
+      <p class="tip">We recommend reviewing the app’s terms and privacy policy to understand how it will use data from
+        your Twitter account. You can revoke access to any app at any time from the <a
+          href="https://twitter.com/settings/applications" target="_blank">Apps and sessions</a> section of your Twitter
+        account settings.</p>
+      <p><small>By authorizing an app you continue to operate under Twitter’s <a href="https://twitter.com/tos"
+            target="_blank">Terms of Service</a>. In particular, some usage information will be shared back with
+          Twitter. For more, see our <a href="https://twitter.com/privacy" target="_blank">Privacy Policy</a>.</small>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
